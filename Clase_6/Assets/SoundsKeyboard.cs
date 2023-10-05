@@ -13,15 +13,24 @@ public class SoundsKeyboard : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Q))
+        if (Input.GetKeyUp(KeyCode.Alpha1))
         {
-            
+            source.Stop();
+            source.clip = ac1;
+            source.Play();
         }
-        if (Input.GetKeyUp(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.Alpha2))
         {
+            source.Stop();
+            source.clip = ac2;
+            source.Play();
+
         }
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.Alpha3))
         {
+            source.Stop();
+            source.clip = ac3;
+            source.Play();
         }
     }
 }
