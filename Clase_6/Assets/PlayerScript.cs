@@ -27,8 +27,8 @@ public class PlayerScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        auds.Stop();
-        auds.clip = clips[Random.Range(0,clips.Length)];
-        auds.Play();
+        this.auds.Stop();
+        this.auds.clip = clips[Random.Range(0,clips.Length)];
+        this.auds.Play();
     }
 }
